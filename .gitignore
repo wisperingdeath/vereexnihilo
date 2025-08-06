@@ -1,19 +1,31 @@
-# Ignore dependencies
-node_modules
-npm-debug.log
-yarn-debug.log
-yarn-error.log
+# Dependencies
+node_modules/
+.next/
+out/
+dist/
 
-# Production builds
-.next
-dist
-out
+# Testing
+coverage/
 
-# Optional environment files
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Env
 .env
 .env.local
 .env.*.local
 
-# OS-specific
-.DS_Store
-Thumbs.db
+# VSCode
+.vscode/
+
+# Optional build artifacts
+*.tsbuildinfo
+
+# LFS-problematic binaries (if accidentally added before)
+**/*.node
