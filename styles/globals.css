@@ -1,0 +1,16 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-background text-white font-sans;
+}
+
+a {
+  @apply text-port hover:underline;
+}
+
+.hero-text {
+  @apply text-4xl font-bold text-port;
+}
