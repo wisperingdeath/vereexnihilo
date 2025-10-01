@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import Layout from '../components/Layout'
 
 export default function IPAccess() {
@@ -27,12 +26,12 @@ export default function IPAccess() {
             <div className="flex items-start gap-3">
               <span className="text-accent-primary text-xl">📋</span>
               <div>
-                <div className="font-semibold text-accent-primary mb-1">Current Status: Patent Preparation Phase</div>
+                <div className="font-semibold text-accent-primary mb-1">Current Status: Preparing Core Patent Filings</div>
                 <p className="text-sm text-text-secondary">
-                  We are currently finalizing patent specifications and preparing for submission. Patents will be filed as
-                  <strong className="text-white"> patent pending</strong> in the coming weeks. We welcome early conversations
-                  with serious partners under NDA—getting in early provides opportunity for strategic positioning before
-                  public filing.
+                  We are finalizing specifications for our first wave of patent applications covering core computational methods. 
+                  Once filed as <strong className="text-white">patent pending</strong>, we will be able to discuss methods openly 
+                  with researchers, partners, and potential licensees. Academic validation and independent review will follow 
+                  immediately after filing—no NDAs required for filed innovations.
                 </p>
               </div>
             </div>
@@ -45,7 +44,7 @@ export default function IPAccess() {
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-gradient mb-2">6</div>
-              <div className="text-xs text-text-tertiary uppercase tracking-wider">Core Domains</div>
+              <div className="text-xs text-text-tertiary uppercase tracking-wider">Initial Filings</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-gradient mb-2">$5B+</div>
@@ -53,130 +52,206 @@ export default function IPAccess() {
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-gradient mb-2">Global</div>
-              <div className="text-xs text-text-tertiary uppercase tracking-wider">PCT Coverage</div>
+              <div className="text-xs text-text-tertiary uppercase tracking-wider">PCT Strategy</div>
             </div>
           </div>
         </section>
 
-        {/* Technology Domains */}
+        {/* Initial Patent Wave */}
+        <section className="max-w-5xl mx-auto mb-20">
+          <h2 className="text-3xl font-bold mb-8">Initial Patent <span className="text-gradient">Wave</span></h2>
+          <p className="text-text-secondary mb-8">
+            Our first filings focus on six core methods with demonstrated performance and clear commercial applications. 
+            Once patent pending, these methods will be available for open discussion and independent validation.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            
+            <div className="card">
+              <div className="flex items-start justify-between mb-3">
+                <h3 className="text-lg font-semibold">Real-Time Data Processing</h3>
+                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Priority 1</span>
+              </div>
+              <p className="text-sm text-text-secondary mb-3">
+                Asynchronous sensor fusion achieving 10× accuracy improvement with geometric consistency guarantees.
+              </p>
+              <div className="text-xs text-text-tertiary">
+                <strong>Applications:</strong> Autonomous vehicles, robotics, consumer electronics
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="flex items-start justify-between mb-3">
+                <h3 className="text-lg font-semibold">Topological Compression</h3>
+                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Priority 1</span>
+              </div>
+              <p className="text-sm text-text-secondary mb-3">
+                Mathematical structure exploitation achieving 37× compression ratios with lossless encoding.
+              </p>
+              <div className="text-xs text-text-tertiary">
+                <strong>Applications:</strong> Cloud storage, video streaming, scientific data
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="flex items-start justify-between mb-3">
+                <h3 className="text-lg font-semibold">Phase Transition Detection</h3>
+                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Priority 1</span>
+              </div>
+              <p className="text-sm text-text-secondary mb-3">
+                Critical threshold identification providing 2-10 minute early warning for system state changes.
+              </p>
+              <div className="text-xs text-text-tertiary">
+                <strong>Applications:</strong> Financial markets, network infrastructure, manufacturing
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="flex items-start justify-between mb-3">
+                <h3 className="text-lg font-semibold">Lightweight Video Codec</h3>
+                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Priority 1</span>
+              </div>
+              <p className="text-sm text-text-secondary mb-3">
+                MCU-compatible encoding achieving 4-28× compression with sub-20ms latency.
+              </p>
+              <div className="text-xs text-text-tertiary">
+                <strong>Applications:</strong> IoT devices, edge computing, automotive systems
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="flex items-start justify-between mb-3">
+                <h3 className="text-lg font-semibold">Materials Process Control</h3>
+                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Priority 1</span>
+              </div>
+              <p className="text-sm text-text-secondary mb-3">
+                Acoustic-assisted crystal growth reducing defects by 70% in superconductor manufacturing.
+              </p>
+              <div className="text-xs text-text-tertiary">
+                <strong>Applications:</strong> Semiconductor fab, advanced materials production
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="flex items-start justify-between mb-3">
+                <h3 className="text-lg font-semibold">Database Optimization</h3>
+                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Priority 1</span>
+              </div>
+              <p className="text-sm text-text-secondary mb-3">
+                Hierarchical indexing structures achieving 20-50× query performance improvements.
+              </p>
+              <div className="text-xs text-text-tertiary">
+                <strong>Applications:</strong> Enterprise data warehouses, real-time analytics
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        {/* Post-Filing Plans */}
+        <section className="max-w-5xl mx-auto mb-20">
+          <div className="card-elevated bg-gradient-to-br from-accent-primary/10 to-accent-primary/5 border border-accent-primary/30">
+            <h2 className="text-2xl font-bold mb-4">After <span className="text-gradient">Patent Pending</span></h2>
+            <p className="text-text-secondary mb-6">
+              Once our core patents are filed, we will pursue open validation and engagement with the research community:
+            </p>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="flex items-start gap-3">
+                <span className="text-accent-primary text-xl">✓</span>
+                <div>
+                  <div className="font-semibold mb-1">Academic Validation</div>
+                  <p className="text-sm text-text-secondary">
+                    Independent review by physicists and mathematicians specializing in relevant domains
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-accent-primary text-xl">✓</span>
+                <div>
+                  <div className="font-semibold mb-1">Open Technical Discussions</div>
+                  <p className="text-sm text-text-secondary">
+                    No NDA required for filed methods—researchers free to evaluate and provide feedback
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-accent-primary text-xl">✓</span>
+                <div>
+                  <div className="font-semibold mb-1">Conference Presentations</div>
+                  <p className="text-sm text-text-secondary">
+                    Present methods at academic and industry conferences for broader evaluation
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-accent-primary text-xl">✓</span>
+                <div>
+                  <div className="font-semibold mb-1">Licensing Discussions</div>
+                  <p className="text-sm text-text-secondary">
+                    Engage potential partners openly with patent protection in place
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Expanded Technology Domains */}
         <section className="max-w-6xl mx-auto mb-20">
-          <h2 className="text-3xl font-bold mb-8">Core <span className="text-gradient">Technology Domains</span></h2>
+          <h2 className="text-3xl font-bold mb-4">Expanded <span className="text-gradient">Portfolio</span></h2>
+          <p className="text-text-secondary mb-8">
+            Following initial filings, we will expand coverage across additional domains and applications:
+          </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             
             <div className="card">
               <div className="text-3xl mb-3">📊</div>
-              <h3 className="text-lg font-semibold mb-2">Data Processing & Optimization</h3>
-              <p className="text-sm text-text-secondary mb-3">
-                High-performance methods addressing fundamental bottlenecks in data-intensive computing.
+              <h3 className="text-lg font-semibold mb-2">Data Processing Variants</h3>
+              <p className="text-sm text-text-secondary">
+                Extensions covering stream processing, distributed computing, and real-time optimization
               </p>
-              <div className="text-xs text-text-tertiary">
-                Real-time processing • Stream optimization • Distributed computing
-              </div>
             </div>
 
             <div className="card">
               <div className="text-3xl mb-3">💾</div>
-              <h3 className="text-lg font-semibold mb-2">Compression & Encoding</h3>
-              <p className="text-sm text-text-secondary mb-3">
-                Novel compression approaches exploiting mathematical structure in data.
+              <h3 className="text-lg font-semibold mb-2">Encoding Methods</h3>
+              <p className="text-sm text-text-secondary">
+                Additional compression approaches for structured data, scientific datasets, blockchain
               </p>
-              <div className="text-xs text-text-tertiary">
-                Video codecs • Lossless compression • Structured data
-              </div>
             </div>
 
             <div className="card">
               <div className="text-3xl mb-3">⚠️</div>
-              <h3 className="text-lg font-semibold mb-2">Predictive Analytics</h3>
-              <p className="text-sm text-text-secondary mb-3">
-                Early detection of critical thresholds and phase transitions in complex systems.
+              <h3 className="text-lg font-semibold mb-2">Predictive Systems</h3>
+              <p className="text-sm text-text-secondary">
+                Expanded applications in healthcare monitoring, quality control, network management
               </p>
-              <div className="text-xs text-text-tertiary">
-                Market prediction • Network monitoring • Quality control
-              </div>
             </div>
 
             <div className="card">
               <div className="text-3xl mb-3">🏭</div>
-              <h3 className="text-lg font-semibold mb-2">Materials & Manufacturing</h3>
-              <p className="text-sm text-text-secondary mb-3">
-                Physics-based process optimization for advanced materials production.
+              <h3 className="text-lg font-semibold mb-2">Manufacturing Processes</h3>
+              <p className="text-sm text-text-secondary">
+                Additional materials processing methods, quality control systems, yield optimization
               </p>
-              <div className="text-xs text-text-tertiary">
-                Crystal growth • Defect reduction • Process control
-              </div>
             </div>
 
             <div className="card">
               <div className="text-3xl mb-3">💼</div>
-              <h3 className="text-lg font-semibold mb-2">Business Process Methods</h3>
-              <p className="text-sm text-text-secondary mb-3">
-                Algorithmic approaches to resource allocation and operational optimization.
+              <h3 className="text-lg font-semibold mb-2">Business Analytics</h3>
+              <p className="text-sm text-text-secondary">
+                Resource allocation, risk modeling, supply chain optimization, decision support
               </p>
-              <div className="text-xs text-text-tertiary">
-                Supply chain • Risk modeling • Decision support
-              </div>
             </div>
 
             <div className="card">
               <div className="text-3xl mb-3">⚙️</div>
               <h3 className="text-lg font-semibold mb-2">Computing Architecture</h3>
-              <p className="text-sm text-text-secondary mb-3">
-                Processor designs and computational structures optimized for specific problem classes.
+              <p className="text-sm text-text-secondary">
+                Specialized processor designs, memory hierarchies, hardware acceleration methods
               </p>
-              <div className="text-xs text-text-tertiary">
-                Specialized processors • Memory hierarchies • Hardware acceleration
-              </div>
             </div>
 
-          </div>
-        </section>
-
-        {/* Early Access Advantage */}
-        <section className="max-w-5xl mx-auto mb-20">
-          <div className="card-elevated bg-gradient-to-br from-accent-primary/10 to-accent-primary/5 border border-accent-primary/30">
-            <h2 className="text-2xl font-bold mb-4">Early Access <span className="text-gradient">Advantage</span></h2>
-            <p className="text-text-secondary mb-6">
-              We&apos;re in active conversations with strategic partners before formal patent filing. Early engagement provides:
-            </p>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="flex items-start gap-3">
-                <span className="text-accent-primary text-xl">→</span>
-                <div>
-                  <div className="font-semibold mb-1">First-Mover Position</div>
-                  <p className="text-sm text-text-secondary">
-                    Opportunity to secure exclusive rights in your domain before competitors
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-accent-primary text-xl">→</span>
-                <div>
-                  <div className="font-semibold mb-1">Influence Development</div>
-                  <p className="text-sm text-text-secondary">
-                    Shape patent claims and implementation priorities for your specific needs
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-accent-primary text-xl">→</span>
-                <div>
-                  <div className="font-semibold mb-1">Favorable Terms</div>
-                  <p className="text-sm text-text-secondary">
-                    Early partners receive preferential licensing structures
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-accent-primary text-xl">→</span>
-                <div>
-                  <div className="font-semibold mb-1">Extended Evaluation</div>
-                  <p className="text-sm text-text-secondary">
-                    More time for technical due diligence and POC integration
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -190,13 +265,13 @@ export default function IPAccess() {
               <div>
                 <div className="text-accent-primary font-semibold mb-2">Patent Protection</div>
                 <p className="text-sm text-text-secondary">
-                  Core algorithmic methods and implementations. 20-year exclusive rights providing licensing foundation.
+                  Application-level methods and implementations. Priority dates established, 20-year exclusive rights.
                 </p>
               </div>
               <div>
                 <div className="text-accent-primary font-semibold mb-2">Trade Secrets</div>
                 <p className="text-sm text-text-secondary">
-                  Physics insights and implementation optimizations. Indefinite protection maintaining competitive advantage.
+                  Core physics derivations and theoretical foundations. Perpetual protection, never disclosed publicly.
                 </p>
               </div>
               <div>
@@ -208,43 +283,43 @@ export default function IPAccess() {
               <div>
                 <div className="text-accent-primary font-semibold mb-2">Know-How</div>
                 <p className="text-sm text-text-secondary">
-                  Integration expertise and optimization techniques. Value-added services strengthening partnerships.
+                  Integration expertise and optimization techniques. Value-added services for licensees.
                 </p>
               </div>
             </div>
           </div>
 
           <div className="card-elevated">
-            <h3 className="text-xl font-semibold mb-4">Filing Timeline</h3>
+            <h3 className="text-xl font-semibold mb-4">Development Timeline</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-4">
                 <div className="text-accent-primary font-bold text-sm w-32">Current</div>
                 <div className="flex-1 text-sm text-text-secondary">
-                  <strong className="text-white">Patent Preparation:</strong> Finalizing specifications, conducting prior art searches, preparing for initial filing
+                  <strong className="text-white">Specification Finalization:</strong> Completing patent applications for six core methods, conducting prior art searches
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="text-accent-primary font-bold text-sm w-32">Phase 1</div>
+                <div className="text-accent-primary font-bold text-sm w-32">Weeks 2-4</div>
                 <div className="flex-1 text-sm text-text-secondary">
-                  <strong className="text-white">Months 1-3:</strong> Foundational patents covering data processing, compression, predictive analytics
+                  <strong className="text-white">Initial Filing:</strong> Submit provisional applications for core methods, establish priority dates, patent pending status
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="text-accent-primary font-bold text-sm w-32">Phase 2</div>
+                <div className="text-accent-primary font-bold text-sm w-32">Months 2-3</div>
                 <div className="flex-1 text-sm text-text-secondary">
-                  <strong className="text-white">Months 3-6:</strong> Materials processing and manufacturing applications
+                  <strong className="text-white">Academic Validation:</strong> Engage researchers for independent review, present at conferences, seek peer feedback
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="text-accent-primary font-bold text-sm w-32">Phase 3</div>
+                <div className="text-accent-primary font-bold text-sm w-32">Months 4-6</div>
                 <div className="flex-1 text-sm text-text-secondary">
-                  <strong className="text-white">Months 6-12:</strong> Business process and hardware architecture patents
+                  <strong className="text-white">Portfolio Expansion:</strong> File additional patents based on validated methods, convert provisionals to PCT applications
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="text-accent-primary font-bold text-sm w-32">Phase 4</div>
+                <div className="text-accent-primary font-bold text-sm w-32">Ongoing</div>
                 <div className="flex-1 text-sm text-text-secondary">
-                  <strong className="text-white">Ongoing:</strong> Continuation applications and improvements based on commercial feedback
+                  <strong className="text-white">Continuation Development:</strong> Additional applications, improvements, domain-specific implementations
                 </div>
               </div>
             </div>
@@ -259,7 +334,7 @@ export default function IPAccess() {
             <div className="card-elevated text-center">
               <h3 className="text-lg font-semibold mb-3">Exclusive Field-of-Use</h3>
               <p className="text-sm text-text-secondary mb-4">
-                Single licensee per vertical market. Technology leaders seeking competitive differentiation.
+                Single licensee per vertical. Technology leaders seeking competitive differentiation.
               </p>
               <div className="text-xs text-text-tertiary">
                 Joint development • Full access • Protected rights
@@ -269,7 +344,7 @@ export default function IPAccess() {
             <div className="card-elevated text-center">
               <h3 className="text-lg font-semibold mb-3">Non-Exclusive</h3>
               <p className="text-sm text-text-secondary mb-4">
-                Multiple licensees in same market. Established companies seeking efficiency improvements.
+                Multiple licensees per market. Established companies seeking efficiency gains.
               </p>
               <div className="text-xs text-text-tertiary">
                 Standard terms • Limited access • Defined field
@@ -279,10 +354,10 @@ export default function IPAccess() {
             <div className="card-elevated text-center">
               <h3 className="text-lg font-semibold mb-3">OEM Integration</h3>
               <p className="text-sm text-text-secondary mb-4">
-                Embedded licensing for hardware/software products. Device manufacturers and platforms.
+                Embedded licensing. Device manufacturers and platform providers.
               </p>
               <div className="text-xs text-text-tertiary">
-                Volume pricing • Integration support • Ongoing updates
+                Volume pricing • Integration support • Updates
               </div>
             </div>
           </div>
@@ -293,102 +368,63 @@ export default function IPAccess() {
               <li className="flex items-start gap-3">
                 <span className="text-accent-primary mt-1">•</span>
                 <div>
-                  <strong className="text-white">Performance Improvements:</strong>
-                  <span className="text-text-secondary"> Demonstrated efficiency gains backed by physics principles</span>
+                  <strong className="text-white">Validated Performance:</strong>
+                  <span className="text-text-secondary"> Methods reviewed by independent researchers, benchmarked against industry standards</span>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent-primary mt-1">•</span>
                 <div>
-                  <strong className="text-white">Cost Reduction:</strong>
-                  <span className="text-text-secondary"> Lower computational requirements and improved operational efficiency</span>
+                  <strong className="text-white">Patent Protection:</strong>
+                  <span className="text-text-secondary"> Freedom to operate backed by filed patents, competitive exclusivity available</span>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent-primary mt-1">•</span>
                 <div>
-                  <strong className="text-white">Competitive Differentiation:</strong>
-                  <span className="text-text-secondary"> Proprietary methods unavailable to competitors</span>
+                  <strong className="text-white">Proven Implementations:</strong>
+                  <span className="text-text-secondary"> Working POCs demonstrating real-world applicability and performance</span>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent-primary mt-1">•</span>
                 <div>
-                  <strong className="text-white">Time-to-Market:</strong>
-                  <span className="text-text-secondary"> Proven implementations reduce development cycles</span>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-accent-primary mt-1">•</span>
-                <div>
-                  <strong className="text-white">Risk Mitigation:</strong>
-                  <span className="text-text-secondary"> Patent protection provides freedom to operate</span>
+                  <strong className="text-white">Integration Support:</strong>
+                  <span className="text-text-secondary"> Technical consultation, optimization guidance, ongoing development</span>
                 </div>
               </li>
             </ul>
           </div>
         </section>
 
-        {/* Validation */}
-        <section className="max-w-5xl mx-auto mb-20">
-          <h2 className="text-3xl font-bold mb-8">Technology <span className="text-gradient">Validation</span></h2>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="card">
-              <h3 className="text-lg font-semibold mb-3">Proof-of-Concept Demonstrations</h3>
-              <ul className="space-y-2 text-sm text-text-secondary">
-                <li>• Performance benchmarking vs. industry standards</li>
-                <li>• Reference implementations showing reduction to practice</li>
-                <li>• Independent validation available under NDA</li>
-                <li>• Real-world testing on representative datasets</li>
-              </ul>
-            </div>
-
-            <div className="card">
-              <h3 className="text-lg font-semibold mb-3">Technical Rigor</h3>
-              <ul className="space-y-2 text-sm text-text-secondary">
-                <li>• Methods grounded in physics and mathematics</li>
-                <li>• Deterministic performance with complexity analysis</li>
-                <li>• Clear scope of applicability and limitations</li>
-                <li>• Reproducible benchmarks and validation protocols</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Confidentiality */}
+        {/* Current Availability */}
         <section className="max-w-5xl mx-auto mb-20">
           <div className="card-elevated bg-accent-primary/5 border border-accent-primary/20">
-            <h2 className="text-2xl font-bold mb-4">Confidentiality & <span className="text-gradient">NDA Access</span></h2>
+            <h2 className="text-2xl font-bold mb-4">Current <span className="text-gradient">Status</span></h2>
             <p className="text-text-secondary mb-6">
-              We welcome early conversations with serious partners under NDA. Even during the patent preparation phase, 
-              we can share technical details, performance data, and proof-of-concept demonstrations with qualified 
-              organizations under appropriate confidentiality protections.
+              We are currently in the patent preparation phase. While we cannot share detailed technical specifications 
+              before filing, we welcome inquiries from potential partners interested in early licensing discussions. 
+              Once our core patents achieve patent pending status, full technical disclosure and academic validation 
+              will follow immediately.
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div>
-                <div className="font-semibold mb-2">Pre-Filing Protection</div>
-                <p className="text-sm text-text-secondary">
-                  All innovations remain strictly confidential until formal patent applications submitted
-                </p>
+                <div className="font-semibold mb-2">Available Now</div>
+                <ul className="text-sm text-text-secondary space-y-1">
+                  <li>• General technology overview and applications</li>
+                  <li>• Performance metrics and benchmark comparisons</li>
+                  <li>• Market analysis and licensing structures</li>
+                  <li>• Preliminary partnership discussions</li>
+                </ul>
               </div>
               <div>
-                <div className="font-semibold mb-2">NDA Requirements</div>
-                <p className="text-sm text-text-secondary">
-                  Technical demonstrations and detailed specifications available under executed NDA
-                </p>
-              </div>
-              <div>
-                <div className="font-semibold mb-2">Segmented Disclosure</div>
-                <p className="text-sm text-text-secondary">
-                  Information shared appropriate to partnership discussions and technical needs
-                </p>
-              </div>
-              <div>
-                <div className="font-semibold mb-2">Trade Secret Protection</div>
-                <p className="text-sm text-text-secondary">
-                  Core physics insights maintained as perpetual trade secrets alongside patents
-                </p>
+                <div className="font-semibold mb-2">After Patent Pending</div>
+                <ul className="text-sm text-text-secondary space-y-1">
+                  <li>• Complete technical specifications</li>
+                  <li>• Academic validation and peer review</li>
+                  <li>• Detailed POC demonstrations</li>
+                  <li>• Open licensing negotiations</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -398,15 +434,15 @@ export default function IPAccess() {
         <section className="max-w-4xl mx-auto">
           <div className="card-elevated text-center">
             <h2 className="text-3xl font-bold mb-4">
-              Start the <span className="text-gradient">conversation</span> early
+              Follow Our <span className="text-gradient">Progress</span>
             </h2>
             <p className="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
-              We&apos;re in active discussions with strategic partners during patent preparation.
-              Early engagement under NDA provides strategic positioning advantages before public filing.
+              We&apos;ll announce when our core patents achieve patent pending status and open validation begins.
+              In the meantime, reach out for general discussions about licensing opportunities and partnership structures.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/contact" className="btn btn-primary">
-                Request NDA Discussion →
+                Get in Touch
               </Link>
               <Link href="/applications" className="btn btn-secondary">
                 View Applications

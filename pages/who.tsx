@@ -41,8 +41,8 @@ export default function Who() {
                 naturally solve similar challenges?
               </p>
               <p>
-                This physics-led approach enables performance improvements that seem impossible from a
-                conventional engineering perspective. Not 10% better. Not 2× better. Often 10×, 50×, or
+                This physics-led approach enables performance improvements that seem impossible from a 
+                conventional engineering perspective. Not 10% better. Not 2× better. Often 10×, 50×, or 
                 100× better.
               </p>
             </div>
@@ -58,7 +58,7 @@ export default function Who() {
               <div className="text-3xl mb-3">🔬</div>
               <h3 className="text-lg font-semibold mb-3">Physics First</h3>
               <p className="text-sm text-text-secondary">
-                We start from fundamental principles, not industry best practices. Understanding the physics
+                We start from fundamental principles, not industry best practices. Understanding the physics 
                 of information, computation, and optimization leads to fundamentally better algorithms.
               </p>
             </div>
@@ -67,7 +67,7 @@ export default function Who() {
               <div className="text-3xl mb-3">📐</div>
               <h3 className="text-lg font-semibold mb-3">Mathematical Rigor</h3>
               <p className="text-sm text-text-secondary">
-                Our methods come with provable performance characteristics. We don&apos;t guess-and-check.
+                Our methods come with provable performance characteristics. We don&apos;t guess-and-check. 
                 We derive optimal solutions from first principles.
               </p>
             </div>
@@ -141,7 +141,7 @@ export default function Who() {
                 <div>
                   <div className="font-semibold mb-1">We Don&apos;t Follow Trends</div>
                   <p className="text-sm text-text-secondary">
-                    While others chase the latest AI hype or blockchain fad, we focus on fundamental
+                    While others chase the latest AI hype or blockchain fad, we focus on fundamental 
                     computational primitives that will remain relevant for decades.
                   </p>
                 </div>
@@ -152,7 +152,7 @@ export default function Who() {
                 <div>
                   <div className="font-semibold mb-1">We Don&apos;t Compromise</div>
                   <p className="text-sm text-text-secondary">
-                    Our methods are designed from first principles for optimal performance. We don&apos;t
+                    Our methods are designed from first principles for optimal performance. We don&apos;t 
                     make trade-offs to fit existing systems—we build systems around optimal methods.
                   </p>
                 </div>
@@ -163,7 +163,7 @@ export default function Who() {
                 <div>
                   <div className="font-semibold mb-1">We Don&apos;t Product Build</div>
                   <p className="text-sm text-text-secondary">
-                    We focus on foundational IP that enables others to build great products. Licensing
+                    We focus on foundational IP that enables others to build great products. Licensing 
                     model ensures our technology reaches maximum impact across industries.
                   </p>
                 </div>
@@ -174,7 +174,7 @@ export default function Who() {
                 <div>
                   <div className="font-semibold mb-1">We Don&apos;t Rush</div>
                   <p className="text-sm text-text-secondary">
-                    Deep physics research takes time. We validate rigorously. We patent strategically.
+                    Deep physics research takes time. We validate rigorously. We patent strategically. 
                     We license selectively. Quality over speed.
                   </p>
                 </div>
@@ -190,7 +190,7 @@ export default function Who() {
               Efficiency Through <span className="text-gradient">Revolutionary Thinking</span>
             </h2>
             <p className="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
-              We&apos;re building an IP licensing empire on groundbreaking discoveries in computational physics.
+              We&apos;re building an IP licensing empire on groundbreaking discoveries in computational physics. 
               The opportunities start where conventional thinking fails.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
