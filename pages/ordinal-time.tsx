@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Layout from '../components/Layout'
 
 export default function OrdinalTime() {
@@ -28,18 +29,18 @@ export default function OrdinalTime() {
             <h2 className="text-2xl font-bold mb-6">Beyond <span className="text-gradient">Clock Time</span></h2>
             <div className="space-y-6 text-text-secondary">
               <p>
-                Conventional computing assumes time as an external, uniformly-ticking parameter. 
-                Events happen "at time t." State updates occur "every Δt." This model works, but 
-                it's fundamentally arbitrary.
+                Conventional computing assumes time as an external, uniformly-ticking parameter.
+                Events happen &quot;at time t.&quot; State updates occur &quot;every Δt.&quot; This model works, but
+                it&apos;s fundamentally arbitrary.
               </p>
               <p>
-                Ordinal Time represents a different approach: events are ordered by causality, 
-                not by clock ticks. What matters is the sequence—what happened before, what happens 
+                Ordinal Time represents a different approach: events are ordered by causality,
+                not by clock ticks. What matters is the sequence—what happened before, what happens
                 after, what must precede what.
               </p>
               <p>
-                This isn't just philosophical. It has practical implications for how we design 
-                systems that maintain consistency, handle asynchronous updates, and reason about 
+                This isn&apos;t just philosophical. It has practical implications for how we design
+                systems that maintain consistency, handle asynchronous updates, and reason about
                 state without assuming synchronized clocks.
               </p>
             </div>
@@ -56,7 +57,7 @@ export default function OrdinalTime() {
               <div className="text-3xl mb-3">→</div>
               <h3 className="text-lg font-semibold mb-3">Justified Sequence</h3>
               <p className="text-sm text-text-secondary">
-                Events are ordered by logical necessity, not arbitrary timestamps. 
+                Events are ordered by logical necessity, not arbitrary timestamps.
                 If A causes B, then A precedes B. No external clock required.
               </p>
             </div>
@@ -65,7 +66,7 @@ export default function OrdinalTime() {
               <div className="text-3xl mb-3">⊕</div>
               <h3 className="text-lg font-semibold mb-3">Causal Consistency</h3>
               <p className="text-sm text-text-secondary">
-                Systems maintain integrity through causality tracking rather than synchronized clocks. 
+                Systems maintain integrity through causality tracking rather than synchronized clocks.
                 State updates respect dependency order automatically.
               </p>
             </div>
@@ -74,7 +75,7 @@ export default function OrdinalTime() {
               <div className="text-3xl mb-3">∞</div>
               <h3 className="text-lg font-semibold mb-3">Asynchronous by Nature</h3>
               <p className="text-sm text-text-secondary">
-                No assumption of simultaneity. Events happen when their causal preconditions are met, 
+                No assumption of simultaneity. Events happen when their causal preconditions are met,
                 not when a global clock reaches a certain value.
               </p>
             </div>
@@ -83,7 +84,7 @@ export default function OrdinalTime() {
               <div className="text-3xl mb-3">⊂</div>
               <h3 className="text-lg font-semibold mb-3">Structural Integrity</h3>
               <p className="text-sm text-text-secondary">
-                The ordering itself carries information. Causality structure is preserved 
+                The ordering itself carries information. Causality structure is preserved
                 through updates without retrofitting or reconciliation.
               </p>
             </div>
@@ -103,12 +104,12 @@ export default function OrdinalTime() {
                 <div>
                   <h3 className="text-lg font-semibold mb-3">Distributed Systems</h3>
                   <p className="text-sm text-text-secondary mb-3">
-                    Traditional distributed systems struggle with clock synchronization. Ordinal Time 
-                    enables systems to maintain consistency through causal ordering rather than 
+                    Traditional distributed systems struggle with clock synchronization. Ordinal Time
+                    enables systems to maintain consistency through causal ordering rather than
                     synchronized timestamps.
                   </p>
                   <p className="text-xs text-text-tertiary">
-                    Example: Sensor fusion without clock synchronization, distributed databases with 
+                    Example: Sensor fusion without clock synchronization, distributed databases with
                     causal consistency, event sourcing systems with logical clocks.
                   </p>
                 </div>
@@ -121,11 +122,11 @@ export default function OrdinalTime() {
                 <div>
                   <h3 className="text-lg font-semibold mb-3">Real-Time Processing</h3>
                   <p className="text-sm text-text-secondary mb-3">
-                    Instead of processing "every 10ms," systems react when causal conditions are met. 
+                    Instead of processing &quot;every 10ms,&quot; systems react when causal conditions are met.
                     This reduces latency and improves responsiveness without sacrificing correctness.
                   </p>
                   <p className="text-xs text-text-tertiary">
-                    Example: Event-driven architectures, reactive systems, stream processing with 
+                    Example: Event-driven architectures, reactive systems, stream processing with
                     causal dependencies.
                   </p>
                 </div>
@@ -138,11 +139,11 @@ export default function OrdinalTime() {
                 <div>
                   <h3 className="text-lg font-semibold mb-3">State Management</h3>
                   <p className="text-sm text-text-secondary mb-3">
-                    State transitions happen in causal order, not clock order. This eliminates race 
+                    State transitions happen in causal order, not clock order. This eliminates race
                     conditions and synchronization overhead while maintaining strict consistency.
                   </p>
                   <p className="text-xs text-text-tertiary">
-                    Example: Concurrent updates in collaborative systems, version control with 
+                    Example: Concurrent updates in collaborative systems, version control with
                     causal history, conflict-free replicated data types.
                   </p>
                 </div>
@@ -159,20 +160,20 @@ export default function OrdinalTime() {
             
             <div className="space-y-4 text-text-secondary">
               <p>
-                <strong className="text-white">No assumptions:</strong> Systems designed with Ordinal Time 
-                don't assume synchronized clocks, uniform tick rates, or global time. They work correctly 
+                <strong className="text-white">No assumptions:</strong> Systems designed with Ordinal Time
+                don&apos;t assume synchronized clocks, uniform tick rates, or global time. They work correctly
                 even when components operate at different speeds or with unpredictable latencies.
               </p>
               
               <p>
-                <strong className="text-white">No retrofits:</strong> State updates happen in the right order 
-                from the start. There's no need to reconcile conflicting timestamps, merge divergent histories, 
+                <strong className="text-white">No retrofits:</strong> State updates happen in the right order
+                from the start. There&apos;s no need to reconcile conflicting timestamps, merge divergent histories,
                 or resolve synchronization conflicts after the fact.
               </p>
               
               <p>
-                <strong className="text-white">Only integrity:</strong> The system maintains consistency through 
-                causality. If event B depends on event A, the system ensures A precedes B in the logical order. 
+                <strong className="text-white">Only integrity:</strong> The system maintains consistency through
+                causality. If event B depends on event A, the system ensures A precedes B in the logical order.
                 The structure itself guarantees correctness.
               </p>
             </div>
@@ -186,21 +187,21 @@ export default function OrdinalTime() {
             
             <div className="space-y-6 text-text-secondary">
               <p>
-                Ordinal Time forms the backbone of our approach to system design. It's not about 
-                eliminating clocks entirely—practical systems still need timestamps for logging, 
+                Ordinal Time forms the backbone of our approach to system design. It&apos;s not about
+                eliminating clocks entirely—practical systems still need timestamps for logging,
                 monitoring, and user interfaces.
               </p>
               
               <p>
-                It's about recognizing that the fundamental ordering of events comes from causality, 
-                not from clock ticks. When we design from this principle, we build systems that are 
+                It&apos;s about recognizing that the fundamental ordering of events comes from causality,
+                not from clock ticks. When we design from this principle, we build systems that are
                 naturally more robust, more scalable, and more correct.
               </p>
               
               <p>
-                This is first principles thinking applied to time itself. We don't accept "time is 
-                a uniformly-ticking parameter" just because that's how most systems work. We ask: 
-                what is time, really? What properties must an ordering have to preserve causality? 
+                This is first principles thinking applied to time itself. We don&apos;t accept &quot;time is
+                a uniformly-ticking parameter&quot; just because that&apos;s how most systems work. We ask:
+                what is time, really? What properties must an ordering have to preserve causality?
                 What can we eliminate without losing correctness?
               </p>
               
@@ -218,17 +219,17 @@ export default function OrdinalTime() {
               Part of Our <span className="text-gradient">Foundation</span>
             </h2>
             <p className="text-text-secondary mb-8 max-w-2xl mx-auto">
-              Ordinal Time is one example of how we think differently about fundamental concepts. 
-              This same approach—questioning assumptions, starting from principles, building from 
+              Ordinal Time is one example of how we think differently about fundamental concepts.
+              This same approach—questioning assumptions, starting from principles, building from
               justified foundations—permeates all our work.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="/applications" className="btn btn-primary">
+              <Link href="/applications" className="btn btn-primary">
                 See Applications
-              </a>
-              <a href="/who" className="btn btn-secondary">
+              </Link>
+              <Link href="/who" className="btn btn-secondary">
                 Our Approach
-              </a>
+              </Link>
             </div>
           </div>
         </section>

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Layout from '../components/Layout'
 
 export default function Applications() {
@@ -195,12 +196,12 @@ export default function Applications() {
               available to qualified partners under NDA.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="/contact" className="btn btn-primary">
+              <Link href="/contact" className="btn btn-primary">
                 Get in Touch
-              </a>
-              <a href="/ip-access" className="btn btn-secondary">
+              </Link>
+              <Link href="/ip-access" className="btn btn-secondary">
                 IP Portfolio
-              </a>
+              </Link>
             </div>
           </div>
         </section>

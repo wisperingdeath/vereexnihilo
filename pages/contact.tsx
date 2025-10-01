@@ -14,10 +14,10 @@ export default function Contact() {
         <section className="max-w-5xl mx-auto mb-16">
           <div className="text-label mb-4">Get in Touch</div>
           <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-            Let's <span className="text-gradient">Connect</span>
+            Let&apos;s <span className="text-gradient">Connect</span>
           </h1>
           <p className="text-xl text-text-secondary max-w-3xl">
-            We're selective about partnerships but always interested in discussions with organizations 
+            We&apos;re selective about partnerships but always interested in discussions with organizations
             that value breakthrough technology and rigorous IP protection.
           </p>
         </section>
@@ -36,7 +36,7 @@ export default function Contact() {
                     andrew.jones@vereexnihilo.com
                   </a>
                   <p className="text-sm text-text-secondary mt-2">
-                    Preferred for technical discussions and licensing inquiries. 
+                    Preferred for technical discussions and licensing inquiries.
                     Encrypted communication available upon request.
                   </p>
                 </div>
@@ -113,7 +113,7 @@ export default function Contact() {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Initial Contact</h3>
                   <p className="text-sm text-text-secondary">
-                    Reach out via email with brief description of your organization and interest. 
+                    Reach out via email with brief description of your organization and interest.
                     We respond to all serious inquiries within 48 hours.
                   </p>
                 </div>
@@ -126,8 +126,8 @@ export default function Contact() {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Qualification Discussion</h3>
                   <p className="text-sm text-text-secondary">
-                    Brief call or email exchange to understand your needs, technical requirements, 
-                    and determine if there's a potential fit.
+                    Brief call or email exchange to understand your needs, technical requirements,
+                    and determine if there&apos;s a potential fit.
                   </p>
                 </div>
               </div>
@@ -165,8 +165,8 @@ export default function Contact() {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Term Sheet & Negotiation</h3>
                   <p className="text-sm text-text-secondary">
-                    Discussion of licensing terms, field-of-use restrictions, payment structure, 
-                    and partnership framework. We're flexible but selective.
+                    Discussion of licensing terms, field-of-use restrictions, payment structure,
+                    and partnership framework. We&apos;re flexible but selective.
                   </p>
                 </div>
               </div>
@@ -224,7 +224,7 @@ export default function Contact() {
               Ready to <span className="text-gradient">explore</span> opportunities?
             </h2>
             <p className="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
-              Reach out to start the conversation. We're selective, but we're always interested 
+              Reach out to start the conversation. We&apos;re selective, but we&apos;re always interested
               in working with exceptional organizations.
             </p>
             <a href="mailto:andrew.jones@vereexnihilo.com" className="btn btn-primary">

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Layout from '../components/Layout'
 
 export default function IPAccess() {
@@ -28,9 +29,9 @@ export default function IPAccess() {
               <div>
                 <div className="font-semibold text-accent-primary mb-1">Current Status: Patent Preparation Phase</div>
                 <p className="text-sm text-text-secondary">
-                  We are currently finalizing patent specifications and preparing for submission. Patents will be filed as 
-                  <strong className="text-white"> patent pending</strong> in the coming weeks. We welcome early conversations 
-                  with serious partners under NDA—getting in early provides opportunity for strategic positioning before 
+                  We are currently finalizing patent specifications and preparing for submission. Patents will be filed as
+                  <strong className="text-white"> patent pending</strong> in the coming weeks. We welcome early conversations
+                  with serious partners under NDA—getting in early provides opportunity for strategic positioning before
                   public filing.
                 </p>
               </div>
@@ -136,7 +137,7 @@ export default function IPAccess() {
           <div className="card-elevated bg-gradient-to-br from-accent-primary/10 to-accent-primary/5 border border-accent-primary/30">
             <h2 className="text-2xl font-bold mb-4">Early Access <span className="text-gradient">Advantage</span></h2>
             <p className="text-text-secondary mb-6">
-              We're in active conversations with strategic partners before formal patent filing. Early engagement provides:
+              We&apos;re in active conversations with strategic partners before formal patent filing. Early engagement provides:
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="flex items-start gap-3">
@@ -400,16 +401,16 @@ export default function IPAccess() {
               Start the <span className="text-gradient">conversation</span> early
             </h2>
             <p className="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
-              We're in active discussions with strategic partners during patent preparation. 
+              We&apos;re in active discussions with strategic partners during patent preparation.
               Early engagement under NDA provides strategic positioning advantages before public filing.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="/contact" className="btn btn-primary">
+              <Link href="/contact" className="btn btn-primary">
                 Request NDA Discussion →
-              </a>
-              <a href="/applications" className="btn btn-secondary">
+              </Link>
+              <Link href="/applications" className="btn btn-secondary">
                 View Applications
-              </a>
+              </Link>
             </div>
           </div>
         </section>
