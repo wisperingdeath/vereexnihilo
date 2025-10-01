@@ -3,14 +3,129 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-background text-white font-sans;
+@layer base {
+  * {
+    @apply antialiased;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-bg-primary text-text-primary font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight text-text-primary;
+  }
+
+  h1 {
+    @apply text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-3xl lg:text-4xl;
+  }
+
+  p {
+    @apply text-text-secondary leading-relaxed;
+  }
+
+  a {
+    @apply text-accent-primary hover:text-accent-secondary transition-colors duration-200;
+  }
+
+  code {
+    @apply font-mono text-sm bg-bg-tertiary px-2 py-1 rounded border border-border-subtle text-accent-primary;
+  }
 }
 
-a {
-  @apply text-port hover:underline;
+@layer components {
+  /* Navigation */
+  .nav-link {
+    @apply text-text-secondary hover:text-text-primary transition-colors duration-200 font-medium text-sm tracking-wide;
+  }
+
+  .nav-link-active {
+    @apply text-accent-primary;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-200 inline-flex items-center gap-2;
+  }
+
+  .btn-primary {
+    @apply bg-accent-primary text-bg-primary hover:bg-accent-secondary hover:shadow-accent;
+  }
+
+  .btn-secondary {
+    @apply bg-bg-tertiary text-text-primary border border-border-medium hover:border-border-strong hover:bg-bg-secondary;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent text-text-secondary hover:text-text-primary hover:bg-bg-secondary;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-bg-secondary border border-border-subtle rounded-xl p-6 hover:border-border-medium transition-all duration-300;
+  }
+
+  .card-elevated {
+    @apply bg-bg-elevated border border-border-medium rounded-xl p-8 shadow-medium hover:shadow-strong transition-all duration-300;
+  }
+
+  /* Sections */
+  .section {
+    @apply py-20 lg:py-32;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6 lg:px-8;
+  }
+
+  /* Text styles */
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent;
+  }
+
+  .text-label {
+    @apply text-xs uppercase tracking-widest font-semibold text-text-muted;
+  }
+
+  /* Animations */
+  .animate-in {
+    @apply animate-fade-in;
+  }
+
+  .animate-up {
+    @apply animate-slide-up;
+  }
 }
 
-.hero-text {
-  @apply text-4xl font-bold text-port;
+@layer utilities {
+  /* Backdrop effects */
+  .backdrop-glass {
+    @apply bg-bg-secondary/80 backdrop-blur-xl border border-border-subtle;
+  }
+
+  /* Dividers */
+  .divider {
+    @apply border-t border-border-subtle;
+  }
+
+  .divider-strong {
+    @apply border-t border-border-medium;
+  }
+
+  /* Focus states */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2 focus:ring-offset-bg-primary;
+  }
 }
