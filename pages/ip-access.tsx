@@ -16,10 +16,27 @@ export default function IPAccess() {
           <h1 className="text-5xl lg:text-6xl font-bold mb-6">
             Physics-Led <span className="text-gradient">IP Portfolio</span>
           </h1>
-          <p className="text-xl text-text-secondary max-w-3xl mb-8">
+          <p className="text-xl text-text-secondary max-w-3xl mb-4">
             We develop and protect computational methods derived from fundamental physics principles. 
             Our licensing model enables partners to commercialize breakthrough technology across multiple sectors.
           </p>
+          
+          {/* Patent Status Notice */}
+          <div className="bg-accent-primary/10 border border-accent-primary/30 rounded-lg p-4 mb-8">
+            <div className="flex items-start gap-3">
+              <span className="text-accent-primary text-xl">📋</span>
+              <div>
+                <div className="font-semibold text-accent-primary mb-1">Current Status: Patent Preparation Phase</div>
+                <p className="text-sm text-text-secondary">
+                  We are currently finalizing patent specifications and preparing for submission. Patents will be filed as 
+                  <strong className="text-white"> patent pending</strong> in the coming weeks. We welcome early conversations 
+                  with serious partners under NDA—getting in early provides opportunity for strategic positioning before 
+                  public filing.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="text-4xl font-bold text-gradient mb-2">100+</div>
@@ -114,6 +131,54 @@ export default function IPAccess() {
           </div>
         </section>
 
+        {/* Early Access Advantage */}
+        <section className="max-w-5xl mx-auto mb-20">
+          <div className="card-elevated bg-gradient-to-br from-accent-primary/10 to-accent-primary/5 border border-accent-primary/30">
+            <h2 className="text-2xl font-bold mb-4">Early Access <span className="text-gradient">Advantage</span></h2>
+            <p className="text-text-secondary mb-6">
+              We're in active conversations with strategic partners before formal patent filing. Early engagement provides:
+            </p>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="flex items-start gap-3">
+                <span className="text-accent-primary text-xl">→</span>
+                <div>
+                  <div className="font-semibold mb-1">First-Mover Position</div>
+                  <p className="text-sm text-text-secondary">
+                    Opportunity to secure exclusive rights in your domain before competitors
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-accent-primary text-xl">→</span>
+                <div>
+                  <div className="font-semibold mb-1">Influence Development</div>
+                  <p className="text-sm text-text-secondary">
+                    Shape patent claims and implementation priorities for your specific needs
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-accent-primary text-xl">→</span>
+                <div>
+                  <div className="font-semibold mb-1">Favorable Terms</div>
+                  <p className="text-sm text-text-secondary">
+                    Early partners receive preferential licensing structures
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-accent-primary text-xl">→</span>
+                <div>
+                  <div className="font-semibold mb-1">Extended Evaluation</div>
+                  <p className="text-sm text-text-secondary">
+                    More time for technical due diligence and POC integration
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* IP Strategy */}
         <section className="max-w-5xl mx-auto mb-20">
           <h2 className="text-3xl font-bold mb-8">Protection <span className="text-gradient">Strategy</span></h2>
@@ -151,6 +216,12 @@ export default function IPAccess() {
           <div className="card-elevated">
             <h3 className="text-xl font-semibold mb-4">Filing Timeline</h3>
             <div className="space-y-4">
+              <div className="flex items-start gap-4">
+                <div className="text-accent-primary font-bold text-sm w-32">Current</div>
+                <div className="flex-1 text-sm text-text-secondary">
+                  <strong className="text-white">Patent Preparation:</strong> Finalizing specifications, conducting prior art searches, preparing for initial filing
+                </div>
+              </div>
               <div className="flex items-start gap-4">
                 <div className="text-accent-primary font-bold text-sm w-32">Phase 1</div>
                 <div className="flex-1 text-sm text-text-secondary">
@@ -287,34 +358,35 @@ export default function IPAccess() {
         {/* Confidentiality */}
         <section className="max-w-5xl mx-auto mb-20">
           <div className="card-elevated bg-accent-primary/5 border border-accent-primary/20">
-            <h2 className="text-2xl font-bold mb-4">Confidentiality & <span className="text-gradient">Access</span></h2>
+            <h2 className="text-2xl font-bold mb-4">Confidentiality & <span className="text-gradient">NDA Access</span></h2>
             <p className="text-text-secondary mb-6">
-              Our research and technical documentation is available to qualified partners under NDA. 
-              We maintain strict protocols for protecting proprietary information:
+              We welcome early conversations with serious partners under NDA. Even during the patent preparation phase, 
+              we can share technical details, performance data, and proof-of-concept demonstrations with qualified 
+              organizations under appropriate confidentiality protections.
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div>
                 <div className="font-semibold mb-2">Pre-Filing Protection</div>
                 <p className="text-sm text-text-secondary">
-                  Innovations remain confidential until patent applications filed
+                  All innovations remain strictly confidential until formal patent applications submitted
                 </p>
               </div>
               <div>
                 <div className="font-semibold mb-2">NDA Requirements</div>
                 <p className="text-sm text-text-secondary">
-                  Technical demonstrations require executed non-disclosure agreements
+                  Technical demonstrations and detailed specifications available under executed NDA
                 </p>
               </div>
               <div>
                 <div className="font-semibold mb-2">Segmented Disclosure</div>
                 <p className="text-sm text-text-secondary">
-                  Information shared on need-to-know basis appropriate to discussions
+                  Information shared appropriate to partnership discussions and technical needs
                 </p>
               </div>
               <div>
                 <div className="font-semibold mb-2">Trade Secret Protection</div>
                 <p className="text-sm text-text-secondary">
-                  Core physics insights maintained as perpetual trade secrets
+                  Core physics insights maintained as perpetual trade secrets alongside patents
                 </p>
               </div>
             </div>
@@ -325,15 +397,15 @@ export default function IPAccess() {
         <section className="max-w-4xl mx-auto">
           <div className="card-elevated text-center">
             <h2 className="text-3xl font-bold mb-4">
-              Ready to <span className="text-gradient">explore</span> licensing opportunities?
+              Start the <span className="text-gradient">conversation</span> early
             </h2>
             <p className="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
-              Detailed technical specifications, performance data, and integration guidance 
-              available to qualified partners.
+              We're in active discussions with strategic partners during patent preparation. 
+              Early engagement under NDA provides strategic positioning advantages before public filing.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a href="/contact" className="btn btn-primary">
-                Request NDA Access
+                Request NDA Discussion →
               </a>
               <a href="/applications" className="btn btn-secondary">
                 View Applications
