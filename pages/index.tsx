@@ -44,11 +44,7 @@ export default function Home() {
       {/* Key Metrics */}
       <section className="section bg-bg-secondary/50">
         <div className="container-custom">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center animate-up">
-              <div className="text-5xl font-bold text-gradient mb-2">$5.4T</div>
-              <div className="text-sm text-text-tertiary uppercase tracking-wider">Total TAM</div>
-            </div>
+          <div className="grid grid-cols-2 gap-8 max-w-2xl mx-auto">
             <div className="text-center animate-up">
               <div className="text-5xl font-bold text-gradient mb-2">60+</div>
               <div className="text-sm text-text-tertiary uppercase tracking-wider">Core Patents</div>
@@ -56,10 +52,6 @@ export default function Home() {
             <div className="text-center animate-up">
               <div className="text-5xl font-bold text-gradient mb-2">156x</div>
               <div className="text-sm text-text-tertiary uppercase tracking-wider">Performance</div>
-            </div>
-            <div className="text-center animate-up">
-              <div className="text-5xl font-bold text-gradient mb-2">90%+</div>
-              <div className="text-sm text-text-tertiary uppercase tracking-wider">Margins</div>
             </div>
           </div>
         </div>

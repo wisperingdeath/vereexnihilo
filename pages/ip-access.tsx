@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Layout from '../components/Layout'
 
 export default function IPAccess() {
@@ -26,29 +27,25 @@ export default function IPAccess() {
             <div className="flex items-start gap-3">
               <span className="text-accent-primary text-xl">📋</span>
               <div>
-                <div className="font-semibold text-accent-primary mb-1">Current Status: Preparing Core Patent Filings</div>
+                <div className="font-semibold text-accent-primary mb-1">Patent Submissions: Early October 2025</div>
                 <p className="text-sm text-text-secondary">
-                  We are finalizing specifications for our first wave of patent applications covering core computational methods. 
-                  Once filed as <strong className="text-white">patent pending</strong>, we will be able to discuss methods openly 
-                  with researchers, partners, and potential licensees. Academic validation and independent review will follow 
-                  immediately after filing—no NDAs required for filed innovations.
+                  Our initial patent applications covering six core computational methods are scheduled for submission 
+                  in early October. Once filed and designated <strong className="text-white">patent pending</strong>, 
+                  we will engage openly with researchers, partners, and potential licensees. Academic validation and 
+                  independent review will follow immediately—no NDAs required for filed innovations.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="text-4xl font-bold text-gradient mb-2">100+</div>
               <div className="text-xs text-text-tertiary uppercase tracking-wider">Patents Planned</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-gradient mb-2">6</div>
-              <div className="text-xs text-text-tertiary uppercase tracking-wider">Initial Filings</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-gradient mb-2">$5B+</div>
-              <div className="text-xs text-text-tertiary uppercase tracking-wider">Market Value</div>
+              <div className="text-xs text-text-tertiary uppercase tracking-wider">October Filings</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-gradient mb-2">Global</div>
@@ -57,12 +54,12 @@ export default function IPAccess() {
           </div>
         </section>
 
-        {/* Initial Patent Wave */}
+        {/* October Filing Wave */}
         <section className="max-w-5xl mx-auto mb-20">
-          <h2 className="text-3xl font-bold mb-8">Initial Patent <span className="text-gradient">Wave</span></h2>
+          <h2 className="text-3xl font-bold mb-8">October <span className="text-gradient">2025 Filings</span></h2>
           <p className="text-text-secondary mb-8">
-            Our first filings focus on six core methods with demonstrated performance and clear commercial applications. 
-            Once patent pending, these methods will be available for open discussion and independent validation.
+            Six core methods with demonstrated performance and clear commercial applications. Once patent pending, 
+            these methods will be available for open discussion and independent validation.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -70,7 +67,7 @@ export default function IPAccess() {
             <div className="card">
               <div className="flex items-start justify-between mb-3">
                 <h3 className="text-lg font-semibold">Real-Time Data Processing</h3>
-                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Priority 1</span>
+                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Oct 2025</span>
               </div>
               <p className="text-sm text-text-secondary mb-3">
                 Asynchronous sensor fusion achieving 10× accuracy improvement with geometric consistency guarantees.
@@ -83,7 +80,7 @@ export default function IPAccess() {
             <div className="card">
               <div className="flex items-start justify-between mb-3">
                 <h3 className="text-lg font-semibold">Topological Compression</h3>
-                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Priority 1</span>
+                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Oct 2025</span>
               </div>
               <p className="text-sm text-text-secondary mb-3">
                 Mathematical structure exploitation achieving 37× compression ratios with lossless encoding.
@@ -96,7 +93,7 @@ export default function IPAccess() {
             <div className="card">
               <div className="flex items-start justify-between mb-3">
                 <h3 className="text-lg font-semibold">Phase Transition Detection</h3>
-                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Priority 1</span>
+                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Oct 2025</span>
               </div>
               <p className="text-sm text-text-secondary mb-3">
                 Critical threshold identification providing 2-10 minute early warning for system state changes.
@@ -109,7 +106,7 @@ export default function IPAccess() {
             <div className="card">
               <div className="flex items-start justify-between mb-3">
                 <h3 className="text-lg font-semibold">Lightweight Video Codec</h3>
-                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Priority 1</span>
+                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Oct 2025</span>
               </div>
               <p className="text-sm text-text-secondary mb-3">
                 MCU-compatible encoding achieving 4-28× compression with sub-20ms latency.
@@ -122,7 +119,7 @@ export default function IPAccess() {
             <div className="card">
               <div className="flex items-start justify-between mb-3">
                 <h3 className="text-lg font-semibold">Materials Process Control</h3>
-                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Priority 1</span>
+                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Oct 2025</span>
               </div>
               <p className="text-sm text-text-secondary mb-3">
                 Acoustic-assisted crystal growth reducing defects by 70% in superconductor manufacturing.
@@ -135,7 +132,7 @@ export default function IPAccess() {
             <div className="card">
               <div className="flex items-start justify-between mb-3">
                 <h3 className="text-lg font-semibold">Database Optimization</h3>
-                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Priority 1</span>
+                <span className="text-xs bg-accent-primary/20 text-accent-primary px-2 py-1 rounded">Oct 2025</span>
               </div>
               <p className="text-sm text-text-secondary mb-3">
                 Hierarchical indexing structures achieving 20-50× query performance improvements.
@@ -153,7 +150,7 @@ export default function IPAccess() {
           <div className="card-elevated bg-gradient-to-br from-accent-primary/10 to-accent-primary/5 border border-accent-primary/30">
             <h2 className="text-2xl font-bold mb-4">After <span className="text-gradient">Patent Pending</span></h2>
             <p className="text-text-secondary mb-6">
-              Once our core patents are filed, we will pursue open validation and engagement with the research community:
+              Following October filings, we will pursue open validation and engagement with the research community:
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="flex items-start gap-3">
@@ -293,25 +290,19 @@ export default function IPAccess() {
             <h3 className="text-xl font-semibold mb-4">Development Timeline</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-4">
-                <div className="text-accent-primary font-bold text-sm w-32">Current</div>
+                <div className="text-accent-primary font-bold text-sm w-32">Oct 2025</div>
                 <div className="flex-1 text-sm text-text-secondary">
-                  <strong className="text-white">Specification Finalization:</strong> Completing patent applications for six core methods, conducting prior art searches
+                  <strong className="text-white">Initial Filing:</strong> Submit provisional applications for six core methods, establish priority dates, achieve patent pending status
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="text-accent-primary font-bold text-sm w-32">Weeks 2-4</div>
-                <div className="flex-1 text-sm text-text-secondary">
-                  <strong className="text-white">Initial Filing:</strong> Submit provisional applications for core methods, establish priority dates, patent pending status
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="text-accent-primary font-bold text-sm w-32">Months 2-3</div>
+                <div className="text-accent-primary font-bold text-sm w-32">Nov-Dec 2025</div>
                 <div className="flex-1 text-sm text-text-secondary">
                   <strong className="text-white">Academic Validation:</strong> Engage researchers for independent review, present at conferences, seek peer feedback
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="text-accent-primary font-bold text-sm w-32">Months 4-6</div>
+                <div className="text-accent-primary font-bold text-sm w-32">Q1 2026</div>
                 <div className="flex-1 text-sm text-text-secondary">
                   <strong className="text-white">Portfolio Expansion:</strong> File additional patents based on validated methods, convert provisionals to PCT applications
                 </div>
@@ -402,10 +393,9 @@ export default function IPAccess() {
           <div className="card-elevated bg-accent-primary/5 border border-accent-primary/20">
             <h2 className="text-2xl font-bold mb-4">Current <span className="text-gradient">Status</span></h2>
             <p className="text-text-secondary mb-6">
-              We are currently in the patent preparation phase. While we cannot share detailed technical specifications 
-              before filing, we welcome inquiries from potential partners interested in early licensing discussions. 
-              Once our core patents achieve patent pending status, full technical disclosure and academic validation 
-              will follow immediately.
+              Patent applications are being finalized for October 2025 submission. We welcome inquiries from potential 
+              partners interested in early licensing discussions. Following patent pending designation, full technical 
+              disclosure and academic validation will proceed immediately.
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div>
@@ -418,7 +408,7 @@ export default function IPAccess() {
                 </ul>
               </div>
               <div>
-                <div className="font-semibold mb-2">After Patent Pending</div>
+                <div className="font-semibold mb-2">After Patent Pending (Oct 2025)</div>
                 <ul className="text-sm text-text-secondary space-y-1">
                   <li>• Complete technical specifications</li>
                   <li>• Academic validation and peer review</li>
@@ -434,11 +424,11 @@ export default function IPAccess() {
         <section className="max-w-4xl mx-auto">
           <div className="card-elevated text-center">
             <h2 className="text-3xl font-bold mb-4">
-              Follow Our <span className="text-gradient">Progress</span>
+              Early <span className="text-gradient">October</span> 2025
             </h2>
             <p className="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
-              We&apos;ll announce when our core patents achieve patent pending status and open validation begins.
-              In the meantime, reach out for general discussions about licensing opportunities and partnership structures.
+              Patent pending status expected early October. Open validation and licensing discussions will follow immediately. 
+              Reach out now for preliminary partnership conversations.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/contact" className="btn btn-primary">
