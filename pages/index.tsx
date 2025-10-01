@@ -133,7 +133,7 @@ export default function Home() {
               Ready to explore the <span className="text-gradient">opportunities</span>?
             </h2>
             <p className="text-lg text-text-secondary mb-8">
-              We take first principles thinking differently and aren't afraid to break the rules.
+              We take first principles thinking differently and aren&apos;t afraid to break the rules.
               The results speak for themselves.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
